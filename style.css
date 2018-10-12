@@ -1,36 +1,15 @@
 * {
   border-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
   text-align: center;
   padding: 5px;
   margin: auto;
   border-style: solid;
   border-width: 5px;
-}
-
-img {
-  display: block;
-  max-width: 99%;
-  height: auto;
-  border-style: solid;
-  border-width: 10px;
-  border-color: #222;
-}
-
-.firstImg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.topMenu{
-  margin: auto;
-  margin-top: 10px;
-  max-width: 100%;
+  font-size: 1.3em;
 }
 
 ul {
@@ -58,3 +37,63 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+footer {
+  text-align: center;
+  background-color: grey;
+  border-style: solid;
+  border-width: black;
+}
+
+.topMenu {
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.headerImg {
+  border-style: solid;
+  border-width: 5px;
+}
+
+.mainContainer:after {
+  padding: 15px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftColumn {
+  float: left;
+  background-color: lightgrey;
+  padding: 10px;
+  width: 15%;
+}
+
+.bio {
+  padding: 10px;
+  background-color: grey;
+  margin-top: 10px;
+}
+
+.links {
+  padding: 10px;
+  background-color: grey;
+  margin-top: 10px;
+}
+
+.rightColumn {
+  float: left;
+  width: 85%;
+}
+
+#maini{
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
